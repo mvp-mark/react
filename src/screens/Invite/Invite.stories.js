@@ -1,16 +1,16 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
-
-import { InviteUser }  from "./dumb";
-import InvitedUserEnhanced from "./enhanced";
-import HomeSmart from "./smart";
+import { InviteUser } from "./dumb";
 
 export default {
   title: "Invited User"
 };
 
-export const InvitedUserDumb = () => (
-  <InviteUser
-
-  />
-);
+export const InvitedUserDumb = () => {
+  return (
+    <InviteUser
+    fullName="Marcus Vinícius Peixoto Paulo"
+    email="Email.com@ymail.com"
+      loading={true}
+    />
+  )
+};

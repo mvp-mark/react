@@ -13,7 +13,7 @@ changingEmail: string,
 }& inviteUserEnhanced;
 
 export type inviteUserEnhanced ={
-  submitInvite: (fullName,email ) => void,
+  submitInvite: (inviteUser:inviteUser ) => void,
   loading: boolean
   onBack: void
   };
