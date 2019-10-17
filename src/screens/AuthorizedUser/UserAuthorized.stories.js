@@ -12,10 +12,10 @@ export const UserAuthDumbs = () => (
     users={[]}
   />
 );
-export const UserAuthenhanced = () => (
-  <UserAuthDumb
-    users={[]}
-    menuAnchorElement={null}
-    setMenuAnchorElement={null}
-  />
-);
+// export const UserAuthenhanced = () => (
+//   <UserAuthDumb
+//     users={[]}
+//     menuAnchorElement={null}
+//     setMenuAnchorElement={null}
+//   />
+// );

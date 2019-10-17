@@ -16,18 +16,20 @@ export const InviteUser = ({
   loading,
   submitInvite
 }: inviteUserDumb) => {
-  return (<Layout title="Convidar Usuario" subtitle="pls funciona" onBack={onBack} />
-    ,
-    <React.Component>
-
+  return (
+  <Layout title="Convidar Usuario" subtitle="pls funciona" onBack={onBack}>
+    <div>
       <TextField label="Nome Completo" value={fullName} onClick={changingFullName} fullWidth />
       <TextField label="Email" value={email} onClick={changingEmail} fullWidth />
-      (&loading){<Button onClick={submitInvite}>
+      {!loading && <Button onClick={submitInvite}>
         Enviar
-        </Button>}(&&loading){<CircularProgress size={30} />}
+        </Button>}
+        {!!loading && <CircularProgress size={30} />}
 
 
 
-    </React.Component>);
+    </div>
+  </Layout>
+    );
 };
 
